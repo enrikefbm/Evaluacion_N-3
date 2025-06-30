@@ -1,0 +1,4 @@
+GigabitEthernet1       [up/up]
+    unassigned
+GigabitEthernet2       [administratively down/down]
+    unassigned

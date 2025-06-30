@@ -1,0 +1,13 @@
+devices:
+  router1:
+    type: router
+    os: iosxe
+    platform: cisco_iosxe
+    credentials:
+      default:
+        username: cisco
+        password: cisco123!
+    connections:
+      cli:
+        protocol: ssh
+        ip: 192.168.2.103

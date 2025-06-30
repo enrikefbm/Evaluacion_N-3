@@ -1,0 +1,18 @@
+---
+- name: Respaldar configuración running-config del router Cisco IOS
+  hosts: routers
+  gather_facts: no
+  connection: network_cli
+
+  tasks:
+    - name: Ejecutar comando show running-config
+      ios_command:
+        commands:
+          - show running-config
+      register: running_config_output
+
+    - name: Guardar configuración en archivo local
+      local_action:
+        module: copy
+        content: "{{ running_config_output.stdout[0] }}"
+        dest: "./backup_running_config_{{ inventory_hostname }}.txt"

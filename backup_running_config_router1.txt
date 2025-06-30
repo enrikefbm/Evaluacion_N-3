@@ -1,0 +1,201 @@
+Building configuration...
+
+Current configuration : 4256 bytes
+!
+! Last configuration change at 20:40:50 UTC Mon Jun 30 2025 by cisco
+!
+version 16.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+platform qfp utilization monitor load 80
+no platform punt-keepalive disable-kernel-core
+platform console virtual
+!
+hostname ACOSTA-RAMIREZ
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!
+!
+!
+ip domain name etw.netacad.com
+!
+!
+!
+login on-success log
+!
+!
+!
+!
+!
+!
+!
+subscriber templating
+! 
+! 
+! 
+! 
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+crypto pki trustpoint TP-self-signed-3166750446
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-3166750446
+ revocation-check none
+ rsakeypair TP-self-signed-3166750446
+!
+!
+crypto pki certificate chain TP-self-signed-3166750446
+ certificate self-signed 01
+  30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030 
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 33313636 37353034 3436301E 170D3235 30363330 31383334 
+  30385A17 0D333030 31303130 30303030 305A3031 312F302D 06035504 03132649 
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D33 31363637 
+  35303434 36308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201 
+  0A028201 0100BF4A 59CAA55D 19ED42B1 C2C4D091 A620127C 46612C32 7B8C86AA 
+  4A289898 A81E5165 044B1B8A BF0A4DA4 8B42E8E6 3B52197A BC64CEE7 F78B1614 
+  A4CDDC7D E5F09F05 4408A24B DA845B39 7B835866 8B064933 4871D199 600AF614 
+  006B94DD A6630C50 0B04F919 E1843960 B3C93BBF 5C830190 D80E20B2 88AB37D9 
+  A3EC91D6 8FF4E8B8 CF6042AF B95EC85B FA117298 7FF6DFB5 35DB565F 9498BC79 
+  1533BAF1 D218C8C5 1D363596 26DECFA8 F188E373 ED978FFA 85CA813E 9875F017 
+  637D33BA E62B7149 691923DA 077972CA 1685F7E5 7480BC0E 96B714B4 265D8AF6 
+  E161AF28 24B282C8 EABEFF85 91722871 A110A32A D481EE8C FEC2C0D9 0436553F 
+  EAA09152 85CD0203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF 
+  301F0603 551D2304 18301680 149ED587 A19E5B8B DF23F8C1 4EF868C2 D69D45AB 
+  F5301D06 03551D0E 04160414 9ED587A1 9E5B8BDF 23F8C14E F868C2D6 9D45ABF5 
+  300D0609 2A864886 F70D0101 05050003 82010100 495608E9 44536571 701312C3 
+  C62FB876 5E1D1FB2 2F3C4D78 E05E1CCE 96B7A837 5663DC93 B5D9BD48 3381D4C9 
+  EB20808F 1746C336 767C589A BEE95BEF DC04619E 9A5B4A27 13D9D00E CF4B9702 
+  3AA1223F 5180A651 A3711392 47CF7177 D0B5FF97 0535AF84 99994708 714FB7D8 
+  1D765AD3 A0B0A197 89C27DDE 9C7CEDE0 4E2E6DC1 3A314C6D 013C7A59 314F035A 
+  DF6D9DEB 67FD0201 60A182E6 65855A3D 3A8E2A47 AF5D8CD9 52D98680 D6937D53 
+  18575F44 E8799E93 9943C5CC F745ACF0 D4C73501 902D544D B04A64D1 75E4E8A2 
+  EF4CABAF CF45C762 677DC436 50AFC429 C48E8761 65EC7898 7924B65E 40166E9C 
+  29A0CA5A 56E11F33 506496D6 6056B167 0543BA94
+  	quit
+!
+!
+!
+!
+!
+!
+!
+!
+license udi pid CSR1000V sn 9HD7LDMK9YP
+no license smart enable
+diagnostic bootup level minimal
+!
+spanning-tree extend system-id
+!
+netconf-yang
+!
+restconf
+!
+username cisco privilege 15 password 0 cisco123!
+!
+redundancy
+!
+!
+!
+!
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+! 
+! 
+!
+!
+interface Loopback1
+ ip address 1.1.1.1 255.255.255.255
+ shutdown
+!
+interface Loopback3
+ ip address 10.2.2.1 255.255.255.0
+!
+interface GigabitEthernet1
+ description VBox
+ ip address dhcp
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+interface GigabitEthernet2
+ no ip address
+ shutdown
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+ip forward-protocol nd
+no ip http server
+ip http authentication local
+ip http secure-server
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+banner motd ^C
+*                                           *
+**                                         **
+***                                       ***
+***  Cisco Networking Academy             ***
+***   Emerging Technologies Workshop:     ***
+***    Model Driven Programmability       ***
+***                                       ***
+***  This software is provided for        ***
+***   Educational Purposes                ***
+***    Only in Networking Academies       ***
+***                                       ***
+**                                         **
+*                                           *
+^C
+!
+line con 0
+ logging synchronous
+ stopbits 1
+line vty 0 4
+ login local
+ transport input ssh
+line vty 5 15
+ login local
+ transport input ssh
+!
+!
+!
+!
+!
+!
+end

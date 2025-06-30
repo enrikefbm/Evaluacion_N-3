@@ -1,0 +1,403 @@
+
+2025-06-30 17:00:16,275: %UNICON-INFO: +++ router1 logfile router1-cli-1751317216.log +++
+
+2025-06-30 17:00:16,276: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+
+2025-06-30 17:00:16,276: %UNICON-DEBUG: +++ initializing context +++
+
+2025-06-30 17:00:16,277: %UNICON-DEBUG: +++ initializing state_machine +++
+
+2025-06-30 17:00:16,277: %UNICON-DEBUG: +++ initializing services +++
+
+2025-06-30 17:00:16,278: %UNICON-DEBUG: adding service  send   :  <unicon.plugins.generic.service_implementation.Send object at 0x11837b770>
+
+2025-06-30 17:00:16,278: %UNICON-DEBUG: adding service  sendline   :  <unicon.plugins.generic.service_implementation.Sendline object at 0x11837b620>
+
+2025-06-30 17:00:16,278: %UNICON-DEBUG: adding service  transmit   :  <unicon.plugins.generic.service_implementation.Send object at 0x1182f3390>
+
+2025-06-30 17:00:16,278: %UNICON-DEBUG: adding service  receive   :  <unicon.plugins.generic.service_implementation.ReceiveService object at 0x11837b4d0>
+
+2025-06-30 17:00:16,279: %UNICON-DEBUG: adding service  receive_buffer   :  <unicon.plugins.generic.service_implementation.ReceiveBufferService object at 0x11837b380>
+
+2025-06-30 17:00:16,279: %UNICON-DEBUG: adding service  expect   :  <unicon.plugins.generic.service_implementation.Expect object at 0x11837b230>
+
+2025-06-30 17:00:16,279: %UNICON-DEBUG: adding service  execute   :  <unicon.plugins.iosxe.service_implementation.Execute object at 0x11837b0e0>
+
+2025-06-30 17:00:16,280: %UNICON-DEBUG: adding service  config   :  <unicon.plugins.iosxe.service_implementation.Config object at 0x11837af90>
+
+2025-06-30 17:00:16,281: %UNICON-DEBUG: adding service  configure   :  <unicon.plugins.iosxe.service_implementation.Configure object at 0x11837ae40>
+
+2025-06-30 17:00:16,281: %UNICON-DEBUG: adding service  enable   :  <unicon.plugins.generic.service_implementation.Enable object at 0x11837aba0>
+
+2025-06-30 17:00:16,282: %UNICON-DEBUG: adding service  disable   :  <unicon.plugins.generic.service_implementation.Disable object at 0x11837a900>
+
+2025-06-30 17:00:16,282: %UNICON-DEBUG: adding service  reload   :  <unicon.plugins.iosxe.service_implementation.Reload object at 0x11837a7b0>
+
+2025-06-30 17:00:16,283: %UNICON-DEBUG: adding service  ping   :  <unicon.plugins.iosxe.service_implementation.Ping object at 0x11837a660>
+
+2025-06-30 17:00:16,283: %UNICON-DEBUG: adding service  traceroute   :  <unicon.plugins.iosxe.service_implementation.Traceroute object at 0x11837a510>
+
+2025-06-30 17:00:16,284: %UNICON-DEBUG: adding service  copy   :  <unicon.plugins.iosxe.service_implementation.Copy object at 0x11837a3c0>
+
+2025-06-30 17:00:16,284: %UNICON-DEBUG: adding service  log_user   :  <unicon.plugins.generic.service_implementation.LogUser object at 0x11837a270>
+
+2025-06-30 17:00:16,284: %UNICON-DEBUG: adding service  log_file   :  <unicon.plugins.generic.service_implementation.LogFile object at 0x11837a120>
+
+2025-06-30 17:00:16,284: %UNICON-DEBUG: adding service  expect_log   :  <unicon.plugins.generic.service_implementation.ExpectLogging object at 0x118379fd0>
+
+2025-06-30 17:00:16,284: %UNICON-DEBUG: adding service  attach   :  <unicon.plugins.generic.service_implementation.AttachModuleService object at 0x118379e80>
+
+2025-06-30 17:00:16,285: %UNICON-DEBUG: adding service  switchto   :  <unicon.plugins.generic.service_implementation.Switchto object at 0x118379d30>
+
+2025-06-30 17:00:16,285: %UNICON-DEBUG: adding service  guestshell   :  <unicon.plugins.generic.service_implementation.GuestshellService object at 0x118379be0>
+
+2025-06-30 17:00:16,285: %UNICON-DEBUG: adding service  bash_console   :  <unicon.plugins.iosxe.service_implementation.BashService object at 0x118379a90>
+
+2025-06-30 17:00:16,286: %UNICON-DEBUG: adding service  rommon   :  <unicon.plugins.iosxe.service_implementation.Rommon object at 0x118379940>
+
+2025-06-30 17:00:16,287: %UNICON-DEBUG: adding service  tclsh   :  <unicon.plugins.iosxe.service_implementation.Tclsh object at 0x1183797f0>
+
+2025-06-30 17:00:16,288: %UNICON-DEBUG: adding service  maintenance_mode   :  <unicon.plugins.iosxe.service_implementation.MaintenanceMode object at 0x1183796a0>
+
+2025-06-30 17:00:16,294: %UNICON-DEBUG: spawn session 'ssh -l cisco 192.168.2.103 -p 22' is being launched.
+
+2025-06-30 17:00:16,298: %UNICON-DEBUG: Subprocess 89349 launched as 'ssh -l cisco 192.168.2.103 -p 22'
+
+
+2025-06-30 17:00:18,595: %UNICON-DEBUG: <<< Unicon Got (target=router1):: '\r'
+
+
+2025-06-30 17:00:18,596: %UNICON-DEBUG: *** Pattern List (target=router1):: 
+
+2025-06-30 17:00:18,596: %UNICON-DEBUG: 	'.+'
+
+2025-06-30 17:00:18,597: %UNICON-DEBUG: 
+
+
+2025-06-30 17:00:18,597: %UNICON-DEBUG: *** Pattern Matched (target=router1):: '.+'
+
+2025-06-30 17:00:18,597: %UNICON-DEBUG: <unicon.eal.MatchMode mode_id=0, mode_name='search multi-line re.S'>
+
+2025-06-30 17:00:18,598: %UNICON-DEBUG: 
+
+2025-06-30 17:00:18,599: %UNICON-INFO: +++ connection to spawn: ssh -l cisco 192.168.2.103 -p 22, id: 4701262848 +++
+
+2025-06-30 17:00:18,600: %UNICON-INFO: connection to router1
+(cisco@192.168.2.103) Password: 
+
+2025-06-30 17:00:18,604: %UNICON-DEBUG: <<< Unicon Got (target=router1):: '\r(cisco@192.168.2.103) Password: '
+
+
+2025-06-30 17:00:18,605: %UNICON-DEBUG: *** Pattern List (target=router1):: 
+
+2025-06-30 17:00:18,605: %UNICON-DEBUG: 	'.+$'
+
+2025-06-30 17:00:18,605: %UNICON-DEBUG: 
+
+
+2025-06-30 17:00:18,606: %UNICON-DEBUG: *** Pattern Matched (target=router1):: '.+$'
+
+2025-06-30 17:00:18,606: %UNICON-DEBUG: <unicon.eal.MatchMode mode_id=0, mode_name='search multi-line re.S'>
+
+2025-06-30 17:00:18,607: %UNICON-DEBUG: 
+
+2025-06-30 17:00:18,652: %UNICON-DEBUG: Statement matched: '[pattern='^.*[Pp]assword( for )?(\S+)?: ?$', action=password_handler, args=None, loop_continue=True, continue_timer=False, trim_buffer=True]'
+
+2025-06-30 17:00:18,653: %UNICON-DEBUG: >>> Unicon Sending (target=router1):: 'cisco123!\r'
+
+
+*                                           *
+**                                         **
+***                                       ***
+***  Cisco Networking Academy             ***
+***   Emerging Technologies Workshop:     ***
+***    Model Driven Programmability       ***
+***                                       ***
+***  This software is provided for        ***
+***   Educational Purposes                ***
+***    Only in Networking Academies       ***
+***                                       ***
+**                                         **
+*                                           *
+
+
+
+ACOSTA-RAMIREZ#
+
+2025-06-30 17:00:18,823: %UNICON-DEBUG: <<< Unicon Got (target=router1):: '\r\n\r\n*                                           *\r\n**                                         **\r\n***                                       ***\r\n***  Cisco Networking Academy             ***\r\n***   Emerging Technologies Workshop:     ***\r\n***    Model Driven Programmability       ***\r\n***                                       ***\r\n***  This software is provided for        ***\r\n***   Educational Purposes                ***\r\n***    Only in Networking Academies       ***\r\n***                                       ***\r\n**                                         **\r\n*                                           *\r\n\r\n\r\n\r\nACOSTA-RAMIREZ#'
+
+
+2025-06-30 17:00:18,824: %UNICON-DEBUG: *** Pattern List (target=router1):: 
+
+2025-06-30 17:00:18,824: %UNICON-DEBUG: 	'^.*--\\s?[Mm]ore\\s?--.*$'
+
+2025-06-30 17:00:18,824: %UNICON-DEBUG: 	'^.*?% (Bad passwords|Bad secrets|Access denied|Authentication failed|Login invalid).*?\\n'
+
+2025-06-30 17:00:18,824: %UNICON-DEBUG: 	'^.*Login incorrect'
+
+2025-06-30 17:00:18,824: %UNICON-DEBUG: 	'^.*% (No password set|Error in authentication.).*'
+
+2025-06-30 17:00:18,824: %UNICON-DEBUG: 	'^.*([Uu]sername|[Ll]ogin): ?$'
+
+2025-06-30 17:00:18,825: %UNICON-DEBUG: 	'^.*User Access Verification'
+
+2025-06-30 17:00:18,825: %UNICON-DEBUG: 	'^(Enter new password|Confirm password):\\s*$'
+
+2025-06-30 17:00:18,825: %UNICON-DEBUG: 	'^.*[Pp]assword( for )?(\\S+)?: ?$'
+
+2025-06-30 17:00:18,825: %UNICON-DEBUG: 	'^(.*)Kerberos:\\s*No default realm defined for Kerberos!\\s*$'
+
+2025-06-30 17:00:18,826: %UNICON-DEBUG: 	'Password OK\\s*$'
+
+2025-06-30 17:00:18,826: %UNICON-DEBUG: 	'^.*Enter passphrase for key .*?:\\s*?'
+
+2025-06-30 17:00:18,827: %UNICON-DEBUG: 	'^.*?(Enter|Confirm) enable secret( \\[<Use current secret>\\])?:\\s*$'
+
+2025-06-30 17:00:18,827: %UNICON-DEBUG: 	'^.*(initial|basic) configuration dialog\\s?\\??\\s*((\\[yes.*\\])|(\\(yes/no\\))|(\\(yes/no\\)\\s*(\\[y\\]))):'
+
+2025-06-30 17:00:18,827: %UNICON-DEBUG: 	'Would you like to enter basic management setup\\? \\[yes/no\\]:\\s*$'
+
+2025-06-30 17:00:18,828: %UNICON-DEBUG: 	'^.*?Enter your selection( \\[2])?:\\s*$'
+
+2025-06-30 17:00:18,828: %UNICON-DEBUG: 	'^.*?Enter your encryption selection( \\[2])?:\\s*$'
+
+2025-06-30 17:00:18,828: %UNICON-DEBUG: 	'Escape character is .*\\n'
+
+2025-06-30 17:00:18,828: %UNICON-DEBUG: 	'^.*RETURN to get started'
+
+2025-06-30 17:00:18,829: %UNICON-DEBUG: 	'Are you sure you want to continue connecting \\(yes/no(/\\[fingerprint\\])?\\)'
+
+2025-06-30 17:00:18,829: %UNICON-DEBUG: 	'^.*(Connection refused|Connection reset by peer|Broken pipe|Network is down|closed by remote host)'
+
+2025-06-30 17:00:18,829: %UNICON-DEBUG: 	'Received disconnect from .*:'
+
+2025-06-30 17:00:18,829: %UNICON-DEBUG: 	'Hit Enter to proceed:'
+
+2025-06-30 17:00:18,829: %UNICON-DEBUG: 	'^(.*?)Press Ctrl\\+x to Exit the session'
+
+2025-06-30 17:00:18,829: %UNICON-DEBUG: 	'^(.*?)Connected.'
+
+2025-06-30 17:00:18,829: %UNICON-DEBUG: 	'^.*?(%\\w+(-\\S+)?-\\d+-\\w+|Guestshell destroyed successfully|%Error opening tftp:\\/\\/255\\.255\\.255\\.255|Autoinstall trying|audit: kauditd hold queue overflow|(LC|RP)/\\d+/\\d+/CPU\\d+:\\w+\\s+\\d+\\s+\\d{2}:\\d{2}:\\d{2}).*\\s*$'
+
+2025-06-30 17:00:18,830: %UNICON-DEBUG: 	'^.*?Press any key to continue\\..*?$'
+
+2025-06-30 17:00:18,830: %UNICON-DEBUG: 	'^.*[Pp]ermission denied'
+
+2025-06-30 17:00:18,830: %UNICON-DEBUG: 	'^.*?enable[\\r\\n]*.*?[Pp]assword( for )?(\\S+)?: ?$'
+
+2025-06-30 17:00:18,832: %UNICON-DEBUG: 	'^.*?(%\\w+(-\\S+)?-\\d+-\\w+|Guestshell destroyed successfully|%Error opening tftp:\\/\\/255\\.255\\.255\\.255|Autoinstall trying|audit: kauditd hold queue overflow|(LC|RP)/\\d+/\\d+/CPU\\d+:\\w+\\s+\\d+\\s+\\d{2}:\\d{2}:\\d{2}).*\\s*$'
+
+2025-06-30 17:00:18,832: %UNICON-DEBUG: 	'^.*System config(uration)? has been modified\\.\\s*Save\\?.*$'
+
+2025-06-30 17:00:18,832: %UNICON-DEBUG: 	'^.*Are you sure you want to reset the system\\s*\\(y\\/n\\)\\?'
+
+2025-06-30 17:00:18,832: %UNICON-DEBUG: 	'^.*Reload node\\s*\\?\\s*\\[no,yes\\]\\s?$'
+
+2025-06-30 17:00:18,833: %UNICON-DEBUG: 	'^.*Proceed( with( quick)? reload)?\\?\\s*\\[confirm\\]'
+
+2025-06-30 17:00:18,833: %UNICON-DEBUG: 	'^.*Do you wish to proceed with reload anyway\\s*\\[confirm\\]\\s*'
+
+2025-06-30 17:00:18,833: %UNICON-DEBUG: 	'^.*User Access Verification'
+
+2025-06-30 17:00:18,833: %UNICON-DEBUG: 	'^(.*)Uncommitted changes found.*?'
+
+2025-06-30 17:00:18,834: %UNICON-DEBUG: 	'^.*(initial|basic) configuration dialog\\s?\\??\\s*((\\[yes.*\\])|(\\(yes/no\\))|(\\(yes/no\\)\\s*(\\[y\\]))):'
+
+2025-06-30 17:00:18,834: %UNICON-DEBUG: 	'^(.*)Would you like to terminate autoinstall\\?\\s*\\[yes\\]:\\s*$'
+
+2025-06-30 17:00:18,835: %UNICON-DEBUG: 	'^.*Do you want to reload the internal AP\\s?\\?\\s((\\[yes/no\\]\\??)|(\\[y/n\\]\\??)):?\\s?$'
+
+2025-06-30 17:00:18,836: %UNICON-DEBUG: 	'^.*Do you want to save the configuration of the AP\\s?\\?\\s*((\\[yes/no\\]\\??)|(\\[y/n\\]\\??)):?\\s?$'
+
+2025-06-30 17:00:18,836: %UNICON-DEBUG: 	'^(.*)This command will reboot the system.\\s*\\(y\\/n\\)\\?\\s*\\[n\\]\\s?$'
+
+2025-06-30 17:00:18,837: %UNICON-DEBUG: 	'^.*Do you want to enforce secure password standard(\\?)?\\s*\\(yes\\/no\\)(\\s*\\[[yn]\\])?\\:\\s*'
+
+2025-06-30 17:00:18,838: %UNICON-DEBUG: 	'^.*(Enter|Confirm) the password for .*admin'
+
+2025-06-30 17:00:18,838: %UNICON-DEBUG: 	'Abort( Power On)? Auto Provisioning .*:'
+
+2025-06-30 17:00:18,839: %UNICON-DEBUG: 	'^.*([Uu]sername|[Ll]ogin): ?$'
+
+2025-06-30 17:00:18,839: %UNICON-DEBUG: 	'^.*[Pp]assword( for )?(\\S+)?: ?$'
+
+2025-06-30 17:00:18,839: %UNICON-DEBUG: 	'^.*Press RETURN to get started.*'
+
+2025-06-30 17:00:18,840: %UNICON-DEBUG: 	'Press RETURN to get started.*'
+
+2025-06-30 17:00:18,840: %UNICON-DEBUG: 	'^(.*?)Connection.*? closed|disconnect: Broken pipe'
+
+2025-06-30 17:00:18,840: %UNICON-DEBUG: 	'^(.*)Please reset'
+
+2025-06-30 17:00:18,841: %UNICON-DEBUG: 	'^.*(Enter|Confirm) the password for .*admin'
+
+2025-06-30 17:00:18,841: %UNICON-DEBUG: 	'^.*(initial|basic) configuration dialog.*\\s?'
+
+2025-06-30 17:00:18,841: %UNICON-DEBUG: 	'^(.*)Would you like to terminate autoinstall\\? ?\\[yes\\]: $'
+
+2025-06-30 17:00:18,842: %UNICON-DEBUG: 	'__timeout__'
+
+2025-06-30 17:00:18,843: %UNICON-DEBUG: 	'.*The highlighted entry will be (booted|executed) automatically in .*?(\\x1b\\S+)?\\s+'
+
+2025-06-30 17:00:18,843: %UNICON-DEBUG: 	'^.*Are you sure you want to continue\\? \\[y/n\\]\\s?.*$'
+
+2025-06-30 17:00:18,843: %UNICON-DEBUG: 	'^(.*?)\\[((?P<hostname00>([^# \\t\\n\\r\\f\\v\\(\\)]+))|[Ss]witch|[Rr]outer|eWLC).*?\\]\\$\\s?$'
+
+2025-06-30 17:00:18,844: %UNICON-DEBUG: 	'^(.*?)(rommon[\\s\\d]*>|switch:|grub>)\\s*(\\x1b\\S+)?$'
+
+2025-06-30 17:00:18,844: %UNICON-DEBUG: 	'^(.*)\\(config-pki-hexmode\\)#\\s?$'
+
+2025-06-30 17:00:18,844: %UNICON-DEBUG: 	'^(.*?)(\\(unlicensed\\))?(WLC|Router|RouterRP|Switch|ios|switch|(?P<hostname00>([^# \\t\\n\\r\\f\\v\\(\\)]+)))([0-9])?(\\(standby\\))?(-stby)?(-standby)?(\\(boot\\))?\\(maint-mode\\)#[\\s\\x07]*$'
+
+2025-06-30 17:00:18,845: %UNICON-DEBUG: 	'^(.*?)(\\{\\.\\.\\}|then.else.fi)\\s*>\\s*$'
+
+2025-06-30 17:00:18,845: %UNICON-DEBUG: 	'^(.*?)\\(acm.*?\\)#[\\s\\x07]*$'
+
+2025-06-30 17:00:18,845: %UNICON-DEBUG: 	'^(.*?)\\(tcl.*?\\)#[\\s\\x07]*$'
+
+2025-06-30 17:00:18,845: %UNICON-DEBUG: 	'^(.*)\\[\\S+@guestshell\\s+.*\\][#\\$]\\s?$'
+
+2025-06-30 17:00:18,846: %UNICON-DEBUG: 	'^(.*)\\((?!.*pki-hexmode).*(con|cfg|ipsec-profile|ca-trustpoint|ca-certificate-map|cs-server|ca-profile|gkm-local-server|cloud|host-list|config-gkm-group|gkm-sa-ipsec|gdoi-coop-ks-config|wsma|enforce-rule|DDNS)\\S*\\)#\\s?$'
+
+2025-06-30 17:00:18,846: %UNICON-DEBUG: 	'^(.*?)(\\(unlicensed\\))?(WLC|Router|RouterRP|Switch|ios|switch|(?P<hostname00>([^# \\t\\n\\r\\f\\v\\(\\)]+)))([0-9])?(\\(recovery-mode\\))?(\\(rp-rec-mode\\))?(\\(standby\\))?(-stby)?(-standby)?(\\(boot\\))?#[\\s\\x07]*$'
+
+2025-06-30 17:00:18,846: %UNICON-DEBUG: 	'^(.*?)(\\(unlicensed\\))?(WLC|Router|RouterRP|Switch|ios|switch|(?P<hostname00>([^# \\t\\n\\r\\f\\v\\(\\)]+)))([0-9])?(\\(recovery-mode\\))?(\\(rp-rec-mode\\))?(\\(standby\\))?(-stby)?(-standby)?(\\(boot\\))?>\\s?$'
+
+2025-06-30 17:00:18,847: %UNICON-DEBUG: 	'^.*?([S|s]tandby console disabled|This \\(D\\)RP Node is not ready or active for login \\/configuration.*)'
+
+2025-06-30 17:00:18,847: %UNICON-DEBUG: 	'^.*--\\s?[Mm]ore\\s?--.*$'
+
+2025-06-30 17:00:18,847: %UNICON-DEBUG: 
+
+
+2025-06-30 17:00:18,848: %UNICON-DEBUG: *** Pattern Matched (target=router1):: '^(.*?)(\\(unlicensed\\))?(WLC|Router|RouterRP|Switch|ios|switch|(?P<hostname00>([^# \\t\\n\\r\\f\\v\\(\\)]+)))([0-9])?(\\(recovery-mode\\))?(\\(rp-rec-mode\\))?(\\(standby\\))?(-stby)?(-standby)?(\\(boot\\))?#[\\s\\x07]*$'
+
+2025-06-30 17:00:18,849: %UNICON-DEBUG: <unicon.eal.MatchMode mode_id=0, mode_name='search multi-line re.S'>
+
+2025-06-30 17:00:18,850: %UNICON-DEBUG: *** Match Groups:: ('\r\n\r\n*                                           *\r\n**                                         **\r\n***                                       ***\r\n***  Cisco Networking Academy             ***\r\n***   Emerging Technologies Workshop:     ***\r\n***    Model Driven Programmability       ***\r\n***                                       ***\r\n***  This software is provided for        ***\r\n***   Educational Purposes                ***\r\n***    Only in Networking Academies       ***\r\n***                                       ***\r\n**                                         **\r\n*                                           *\r\n\r\n\r\n\r\n', None, 'ACOSTA-RAMIREZ', 'ACOSTA-RAMIREZ', 'ACOSTA-RAMIREZ', None, None, None, None, None, None, None)
+
+
+2025-06-30 17:00:18,850: %UNICON-DEBUG: Statement matched: '[pattern='^(.*?)(\(unlicensed\))?(WLC|Router|RouterRP|Switch|ios|switch|(?P<hostname00>([^# \t\n\r\f\v\(\)]+)))([0-9])?(\(recovery-mode\))?(\(rp-rec-mode\))?(\(standby\))?(-stby)?(-standby)?(\(boot\))?#[\s\x07]*$', action=update_cur_state, args={'transition': <unicon.statemachine.statetransition.AnyStateTransition object at 0x118379010>, 'state': enable}, loop_continue=False, continue_timer=False, trim_buffer=True]'
+
+2025-06-30 17:00:18,854: %UNICON-DEBUG: Learned hostname(s) : 'ACOSTA-RAMIREZ'.
+
+2025-06-30 17:00:18,856: %UNICON-WARNING: Invalid hostname detected: found ACOSTA-RAMIREZ, expected router1
+
+2025-06-30 17:00:18,858: %UNICON-DEBUG: >>> Unicon Sending (target=router1):: '\r'
+
+ACOSTA-RAMIREZ#
+
+2025-06-30 17:00:18,992: %UNICON-DEBUG: <<< Unicon Got (target=router1):: '\r\nACOSTA-RAMIREZ#'
+
+
+2025-06-30 17:00:18,992: %UNICON-DEBUG: *** Pattern List (target=router1):: 
+
+2025-06-30 17:00:18,992: %UNICON-DEBUG: 	'.+$'
+
+2025-06-30 17:00:18,992: %UNICON-DEBUG: 
+
+
+2025-06-30 17:00:18,992: %UNICON-DEBUG: *** Pattern Matched (target=router1):: '.+$'
+
+2025-06-30 17:00:18,993: %UNICON-DEBUG: <unicon.eal.MatchMode mode_id=0, mode_name='search multi-line re.S'>
+
+2025-06-30 17:00:18,993: %UNICON-DEBUG: 
+
+2025-06-30 17:00:19,018: %UNICON-DEBUG: Statement matched: '[pattern='^(.*?)(\(unlicensed\))?(WLC|Router|RouterRP|Switch|ios|switch|(?P<hostname00>([^# \t\n\r\f\v\(\)]+)))([0-9])?(\(recovery-mode\))?(\(rp-rec-mode\))?(\(standby\))?(-stby)?(-standby)?(\(boot\))?#[\s\x07]*$', action=update_cur_state, args={'transition': <unicon.statemachine.statetransition.AnyStateTransition object at 0x1182f2e90>, 'state': enable}, loop_continue=False, continue_timer=False, trim_buffer=True]'
+
+2025-06-30 17:00:19,144: %UNICON-DEBUG: >>> Unicon Sending (target=router1):: ''
+
+2025-06-30 17:00:19,249: %UNICON-INFO: +++ router1 with via 'cli': executing command 'show version | include operating mode' +++
+
+2025-06-30 17:00:19,250: %UNICON-DEBUG: >>> Unicon Sending (target=router1):: 'show version | include operating mode\r'
+show version | include operating mode
+ACOSTA-RAMIREZ#
+
+2025-06-30 17:00:19,365: %UNICON-DEBUG: <<< Unicon Got (target=router1):: 'show version | include operating mode\r\nACOSTA-RAMIREZ#'
+
+
+2025-06-30 17:00:19,366: %UNICON-DEBUG: *** Pattern List (target=router1):: 
+
+2025-06-30 17:00:19,366: %UNICON-DEBUG: 	'^.*\\[confirm\\]\\s*[\\(\\[]y/n[\\]\\)].*$'
+
+2025-06-30 17:00:19,366: %UNICON-DEBUG: 	'^.*(?<!Abort Copy\\? )\\[confirm\\].*$'
+
+2025-06-30 17:00:19,367: %UNICON-DEBUG: 	'^.*\\[yes[/,][Nn][Oo]\\]\\s?:?\\s*$'
+
+2025-06-30 17:00:19,367: %UNICON-DEBUG: 	'^.*?(%\\w+(-\\S+)?-\\d+-\\w+|Guestshell destroyed successfully|%Error opening tftp:\\/\\/255\\.255\\.255\\.255|Autoinstall trying|audit: kauditd hold queue overflow|(LC|RP)/\\d+/\\d+/CPU\\d+:\\w+\\s+\\d+\\s+\\d{2}:\\d{2}:\\d{2}).*\\s*$'
+
+2025-06-30 17:00:19,368: %UNICON-DEBUG: 	'^.*Overwrite the previous NVRAM configuration\\?\\[confirm\\].*$'
+
+2025-06-30 17:00:19,368: %UNICON-DEBUG: 	'^.*Delete filename \\[.*\\]\\?\\s*$'
+
+2025-06-30 17:00:19,368: %UNICON-DEBUG: 	'^.*(?<!Abort Copy\\? )\\[confirm\\].*$'
+
+2025-06-30 17:00:19,368: %UNICON-DEBUG: 	'^.*Do you want to continue\\? \\[no\\]:\\s*$'
+
+2025-06-30 17:00:19,369: %UNICON-DEBUG: 	'^.*Do you want to remove the above files\\? \\[y\\/n]\\s*$'
+
+2025-06-30 17:00:19,369: %UNICON-DEBUG: 	'^.*--\\s?[Mm]ore\\s?--.*$'
+
+2025-06-30 17:00:19,369: %UNICON-DEBUG: 	'^(.*?)(\\(unlicensed\\))?(WLC|Router|RouterRP|Switch|ios|switch|(?P<hostname00>([^# \\t\\n\\r\\f\\v\\(\\)]+)))([0-9])?(\\(recovery-mode\\))?(\\(rp-rec-mode\\))?(\\(standby\\))?(-stby)?(-standby)?(\\(boot\\))?#[\\s\\x07]*$'
+
+2025-06-30 17:00:19,370: %UNICON-DEBUG: 	'^.*?([S|s]tandby console disabled|This \\(D\\)RP Node is not ready or active for login \\/configuration.*)'
+
+2025-06-30 17:00:19,370: %UNICON-DEBUG: 	'^(.*?)(\\(unlicensed\\))?(WLC|Router|RouterRP|Switch|ios|switch|(?P<hostname00>([^# \\t\\n\\r\\f\\v\\(\\)]+)))([0-9])?(\\(recovery-mode\\))?(\\(rp-rec-mode\\))?(\\(standby\\))?(-stby)?(-standby)?(\\(boot\\))?>\\s?$'
+
+2025-06-30 17:00:19,370: %UNICON-DEBUG: 	'^(.*)\\((?!.*pki-hexmode).*(con|cfg|ipsec-profile|ca-trustpoint|ca-certificate-map|cs-server|ca-profile|gkm-local-server|cloud|host-list|config-gkm-group|gkm-sa-ipsec|gdoi-coop-ks-config|wsma|enforce-rule|DDNS)\\S*\\)#\\s?$'
+
+2025-06-30 17:00:19,371: %UNICON-DEBUG: 	'^(.*)\\[\\S+@guestshell\\s+.*\\][#\\$]\\s?$'
+
+2025-06-30 17:00:19,372: %UNICON-DEBUG: 	'^(.*?)\\(tcl.*?\\)#[\\s\\x07]*$'
+
+2025-06-30 17:00:19,372: %UNICON-DEBUG: 	'^(.*?)\\(acm.*?\\)#[\\s\\x07]*$'
+
+2025-06-30 17:00:19,372: %UNICON-DEBUG: 	'^(.*?)(\\{\\.\\.\\}|then.else.fi)\\s*>\\s*$'
+
+2025-06-30 17:00:19,373: %UNICON-DEBUG: 	'^(.*?)(\\(unlicensed\\))?(WLC|Router|RouterRP|Switch|ios|switch|(?P<hostname00>([^# \\t\\n\\r\\f\\v\\(\\)]+)))([0-9])?(\\(standby\\))?(-stby)?(-standby)?(\\(boot\\))?\\(maint-mode\\)#[\\s\\x07]*$'
+
+2025-06-30 17:00:19,373: %UNICON-DEBUG: 	'^(.*)\\(config-pki-hexmode\\)#\\s?$'
+
+2025-06-30 17:00:19,374: %UNICON-DEBUG: 	'^(.*?)(rommon[\\s\\d]*>|switch:|grub>)\\s*(\\x1b\\S+)?$'
+
+2025-06-30 17:00:19,374: %UNICON-DEBUG: 	'^(.*?)\\[((?P<hostname00>([^# \\t\\n\\r\\f\\v\\(\\)]+))|[Ss]witch|[Rr]outer|eWLC).*?\\]\\$\\s?$'
+
+2025-06-30 17:00:19,374: %UNICON-DEBUG: 
+
+
+2025-06-30 17:00:19,375: %UNICON-DEBUG: *** Pattern Matched (target=router1):: '^(.*?)(\\(unlicensed\\))?(WLC|Router|RouterRP|Switch|ios|switch|(?P<hostname00>([^# \\t\\n\\r\\f\\v\\(\\)]+)))([0-9])?(\\(recovery-mode\\))?(\\(rp-rec-mode\\))?(\\(standby\\))?(-stby)?(-standby)?(\\(boot\\))?#[\\s\\x07]*$'
+
+2025-06-30 17:00:19,375: %UNICON-DEBUG: <unicon.eal.MatchMode mode_id=0, mode_name='search multi-line re.S'>
+
+2025-06-30 17:00:19,375: %UNICON-DEBUG: *** Match Groups:: ('show version | include operating mode\r\n', None, 'ACOSTA-RAMIREZ', 'ACOSTA-RAMIREZ', 'ACOSTA-RAMIREZ', None, None, None, None, None, None, None)
+
+
+2025-06-30 17:00:19,375: %UNICON-DEBUG: Statement matched: '[pattern='^(.*?)(\(unlicensed\))?(WLC|Router|RouterRP|Switch|ios|switch|(?P<hostname00>([^# \t\n\r\f\v\(\)]+)))([0-9])?(\(recovery-mode\))?(\(rp-rec-mode\))?(\(standby\))?(-stby)?(-standby)?(\(boot\))?#[\s\x07]*$', action=None, args=None, loop_continue=False, continue_timer=False, trim_buffer=True]'
+
+2025-06-30 17:00:19,502: %UNICON-DEBUG: Statement matched: '[pattern='^(.*?)(\(unlicensed\))?(WLC|Router|RouterRP|Switch|ios|switch|(?P<hostname00>([^# \t\n\r\f\v\(\)]+)))([0-9])?(\(recovery-mode\))?(\(rp-rec-mode\))?(\(standby\))?(-stby)?(-standby)?(\(boot\))?#[\s\x07]*$', action=None, args=None, loop_continue=False, continue_timer=False, trim_buffer=True]'
+
+2025-06-30 17:00:19,506: %UNICON-INFO: +++ initializing handle +++
+
+2025-06-30 17:00:19,634: %UNICON-DEBUG: >>> Unicon Sending (target=router1):: ''
+
+2025-06-30 17:00:19,735: %UNICON-DEBUG: >>> Unicon Sending (target=router1):: '\r'
+
+ACOSTA-RAMIREZ#
+
+2025-06-30 17:00:19,828: %UNICON-DEBUG: <<< Unicon Got (target=router1):: '\r\nACOSTA-RAMIREZ#'
+
+
+2025-06-30 17:00:19,828: %UNICON-DEBUG: *** Pattern List (target=router1):: 
+
+2025-06-30 17:00:19,828: %UNICON-DEBUG: 	'.+$'
+
+2025-06-30 17:00:19,828: %UNICON-DEBUG: 
+
+
+2025-06-30 17:00:19,829: %UNICON-DEBUG: *** Pattern Matched (target=router1):: '.+$'
+
+2025-06-30 17:00:19,829: %UNICON-DEBUG: <unicon.eal.MatchMode mode_id=0, mode_name='search multi-line re.S'>
+
+2025-06-30 17:00:19,829: %UNICON-DEBUG: 
+
+2025-06-30 17:00:40,870: %UNICON-DEBUG: spawn session 'ssh -l cisco 192.168.2.103 -p 22' has been closed.

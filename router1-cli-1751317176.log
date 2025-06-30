@@ -1,0 +1,40 @@
+
+2025-06-30 16:59:36,244: %UNICON-INFO: +++ router1 logfile router1-cli-1751317176.log +++
+
+2025-06-30 16:59:36,245: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+
+
+2025-06-30 16:59:38,581: %UNICON-INFO: +++ connection to spawn: ssh -l cisco 192.168.2.103 -p 22, id: 4708160848 +++
+
+2025-06-30 16:59:38,582: %UNICON-INFO: connection to router1
+(cisco@192.168.2.103) Password: 
+
+*                                           *
+**                                         **
+***                                       ***
+***  Cisco Networking Academy             ***
+***   Emerging Technologies Workshop:     ***
+***    Model Driven Programmability       ***
+***                                       ***
+***  This software is provided for        ***
+***   Educational Purposes                ***
+***    Only in Networking Academies       ***
+***                                       ***
+**                                         **
+*                                           *
+
+
+
+ACOSTA-RAMIREZ#
+
+2025-06-30 16:59:38,788: %UNICON-WARNING: Invalid hostname detected: found ACOSTA-RAMIREZ, expected router1
+
+ACOSTA-RAMIREZ#
+
+2025-06-30 16:59:39,175: %UNICON-INFO: +++ router1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+ACOSTA-RAMIREZ#
+
+2025-06-30 16:59:39,423: %UNICON-INFO: +++ initializing handle +++
+
+ACOSTA-RAMIREZ#

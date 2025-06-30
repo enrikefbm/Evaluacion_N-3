@@ -1,0 +1,9 @@
+GigabitEthernet1       [up/up]
+    unassigned
+GigabitEthernet2       [administratively down/down]
+    unassigned
+Loopback1              [administratively down/down]
+    unassigned
+Loopback3              [up/up]
+    FE80::21E:E6FF:FEAF:8500
+    3001:ABCD:ABCD:2::2

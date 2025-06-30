@@ -1,0 +1,67 @@
+
+2025-06-30 17:07:29,278: %UNICON-INFO: +++ router1 logfile router1-cli-1751317649.log +++
+
+2025-06-30 17:07:29,281: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+
+
+2025-06-30 17:07:31,669: %UNICON-INFO: +++ connection to spawn: ssh -l cisco 192.168.2.103, id: 4506424320 +++
+
+2025-06-30 17:07:31,670: %UNICON-INFO: connection to router1
+(cisco@192.168.2.103) Password: 
+
+*                                           *
+**                                         **
+***                                       ***
+***  Cisco Networking Academy             ***
+***   Emerging Technologies Workshop:     ***
+***    Model Driven Programmability       ***
+***                                       ***
+***  This software is provided for        ***
+***   Educational Purposes                ***
+***    Only in Networking Academies       ***
+***                                       ***
+**                                         **
+*                                           *
+
+
+
+ACOSTA-RAMIREZ#
+
+2025-06-30 17:07:31,892: %UNICON-INFO: Learned hostname(s): 'ACOSTA-RAMIREZ'.
+
+ACOSTA-RAMIREZ#
+
+2025-06-30 17:07:32,272: %UNICON-INFO: +++ ACOSTA-RAMIREZ(alias=router1) with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+ACOSTA-RAMIREZ#
+
+2025-06-30 17:07:32,499: %UNICON-INFO: +++ initializing handle +++
+
+2025-06-30 17:07:32,729: %UNICON-INFO: +++ ACOSTA-RAMIREZ(alias=router1) with via 'cli': executing command 'show install summary' +++
+show install summary
+[ R0 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version    
+--------------------------------------------------------------------------------
+IMG   C    16.9.5.0.3780                                                       
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+ACOSTA-RAMIREZ#
+
+2025-06-30 17:07:35,423: %UNICON-INFO: +++ ACOSTA-RAMIREZ(alias=router1) with via 'cli': executing command 'show ipv6 interface brief' +++
+show ipv6 interface brief
+GigabitEthernet1       [up/up]
+    unassigned
+GigabitEthernet2       [administratively down/down]
+    unassigned
+Loopback1              [administratively down/down]
+    unassigned
+Loopback3              [up/up]
+    FE80::21E:E6FF:FEAF:8500
+    3001:ABCD:ABCD:2::2
+ACOSTA-RAMIREZ#
